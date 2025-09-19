@@ -111,18 +111,6 @@ nav {
     color: black;
 }
 
-nav .seeda .one{
-    background: linear-gradient(270deg, #2355B4, #7b98ff, #a3c8ff, #2355B4);
-    background-size: 400% 400%;
-    animation: mygradient 18s ease infinite;
-    padding: 12px 25px;
-    border-radius: 30px;
-    font-weight: 500;
-    box-shadow: 0 4px 16px 0 rgba(123,95,255,0.07);
-    transition: background-color 0.3s ease;
-    color: white;
-}
-
 .two:hover, .three:hover, .four:hover, .five:hover {
     background: linear-gradient(270deg, #2355B4, #7b98ff, #a3c8ff, #2355B4);
     background-size: 400% 400%;
