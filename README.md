@@ -1,6 +1,7 @@
 # UDST Developers Club (UDC)
 
-##Created by SyedAhmedKhaderi
+## Created by SyedAhmedKhaderi
+
 A comprehensive website for the UDST Developers Club, a student organization at the University of Doha for Science and Technology focused on fostering a positive impact in the tech community.
 
 ## About UDC
