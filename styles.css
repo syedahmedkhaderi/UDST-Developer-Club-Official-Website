@@ -40,10 +40,10 @@ p {
 nav {
     background-color: white;
     max-width: 1250px;
-    margin: 4rem auto;
+    margin: 2rem 3rem;
     border-radius: 16px;
     height: 100px;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 .main {
@@ -90,8 +90,8 @@ nav {
 .seeda a {
     text-decoration: none;
     color: #7b98ff;
-    font-weight: 500;
-    font-size: 1.3rem;
+    font-weight: 400;
+    font-size: 1.1rem;
     transition: color 0.3s ease;
     padding: 10px 15px;
     border: 1px solid transparent;
@@ -123,7 +123,6 @@ nav .seeda .one{
     justify-content: space-between;
     align-items: flex-start;
     max-width: 1250px;
-    margin: 4rem auto;
     padding: 0 2rem;
     text-align: center;
     background: rgba(255,255,255,0.92);
@@ -191,4 +190,82 @@ nav .seeda .one{
     box-shadow: 0 4px 16px 0 rgba(123,95,255,0.07);
     transition: background-color 0.3s ease;
     margin: 10px;
+}
+
+/* from here ill design the committees page */
+
+.committees {
+    max-width: 1250px;
+    padding: 0 1rem;
+    text-align: center;
+    background: rgba(255,255,255,0.92);
+    border-radius: 16px;
+    box-shadow: 0 4px 16px 0 rgba(123,95,255,0.07);
+    margin: 2rem 2rem 2rem 3rem;
+    padding: 1rem;
+    max-height: 1000px;
+    
+}
+
+.committeeCards {
+    display: flex;
+    margin-top: 1.5rem;
+    max-height: 400px;
+    gap: 2rem;
+    padding: 1rem;
+    padding-bottom: 20px;
+}
+
+.committeeCard {
+    background-color: rgba(240, 238, 236, 0.718);
+    border-radius: 16px;
+    padding: 1rem;
+    box-shadow: 0 4px 16px rgba(123,95,255,0.07);
+    flex: 3; /* helps cards fill evenly and stay spaced */
+    text-align: center;
+}
+
+.committeeCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(123,95,255,0.12);
+    transition: all 0.3s ease;
+}
+/*  */
+.committeeCard i {
+    font-size: 2.5rem;
+    background: linear-gradient(270deg, #2355B4, #7b98ff, #a3c8ff, #2355B4);
+    background-size: 600% 600%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    animation: mygradient 18s ease infinite;
+    margin-bottom: 1rem;
+    padding-top: 18px;
+}
+
+.committeeCard h3 {
+    color: #666;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.committeeCard p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/*  */
+.committees h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(270deg, #2355B4, #7b98ff, #a3c8ff, #2355B4);
+    background-size: 600% 600%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    animation: mygradient 18s ease infinite;
+    margin-top: 1rem;
 }
