@@ -420,12 +420,12 @@ footer .socialLinks a:hover {
 /* This is for the contact page */
 .contactContainer{
     display: flex;
-    margin-top: 1.5rem;
     max-height: 1000px;
     gap: 2rem;
-    padding: 1rem;
+    padding: 0.65rem 2rem;
     padding-bottom: 20px;
-    margin-left: 2rem;
+    margin: 2rem 13rem;
+    max-width: 1250px;
 }
 
 .first, .second, .third{
@@ -433,9 +433,10 @@ footer .socialLinks a:hover {
     border-radius: 16px;
     padding: 1rem;
     box-shadow: 0 4px 16px rgba(123,95,255,0.07);
-    flex: 3;
-    max-width: 38rem;
+    flex: 1 1 0;
+    min-width: 0;
     color: #666;
+    flex-wrap: wrap;
 
 }
 .first h2, .second h2, .third h3{
@@ -474,9 +475,12 @@ footer .socialLinks a:hover {
     max-width: 1250px;
     line-height: 1.6;
     font-size: 1rem;
-    margin: 1.5rem 1rem 3rem 3rem;
-    padding-left: 3rem;
+    margin: 2rem 13rem;
+    padding: 0.65rem 2rem;
     max-height: 500px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(123,95,255,0.07);
 }
 .links{
     display: flex;
@@ -536,22 +540,23 @@ button[type="submit"]:hover {
 }
 
 .first img{
-    width: 32rem;
+    width: 100%;
+    max-width: 32rem;
     height: auto;
     border-radius: 16px;
     box-shadow: 0 4px 16px 0 rgba(123,95,255,0.07);
-    margin: 0 2rem;
-    margin-top: 0.5rem;
+    margin: 0.5rem 0;
+    display: block;
 }
 
 /* here comes member page - local repo youtube video */
 .wrapper{
     background-color: white;
     max-width: 1550px;
-    margin: 2rem 3rem 3rem 3rem;
+    margin: 2rem 10rem;
     border-radius: 20px;
     box-shadow: 0 4px 16px 0 rgba(123,95,255,0.07);
-    padding: 1rem;
+    padding: 0.65rem 2rem;
     padding-bottom: 3rem;
     max-height: 2000px;
 
@@ -567,7 +572,7 @@ button[type="submit"]:hover {
     justify-content: center;
     align-items: center;
     margin-top: 1rem;
-    margin-left: 1.5rem;
+    margin: 1rem 4rem;
     flex-shrink: 0;
 }
 
@@ -690,4 +695,842 @@ button[type="submit"]:hover {
 .content .sci li a{
     color: #fff;
     font-size: 24px;
+}
+
+/* Events Page Styles */
+.events-hero, .membership-hero {
+    margin: 2rem 0rem;
+}
+
+.upcoming-events, .past-events, .membership-benefits, .membership-plans, .how-to-join {
+    max-width: 1250px;
+    padding: 0 1rem;
+    text-align: center;
+    background: rgba(255,255,255,0.92);
+    border-radius: 16px;
+    box-shadow: 0 4px 16px 0 rgba(123,95,255,0.07);
+    margin: 2rem 2rem 2.5rem 3rem;
+    padding: 1rem;
+    max-height: 1000px;
+}
+
+.upcoming-events h2, .past-events h2, .membership-benefits h2, .membership-plans h2, .how-to-join h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(270deg, #2355B4, #7b98ff, #a3c8ff, #2355B4);
+    background-size: 600% 600%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    animation: mygradient 18s ease infinite;
+    margin-top: 1rem;
+}
+
+.eventsContainer, .benefitsContainer, .plansContainer, .stepsContainer {
+    display: flex;
+    margin-top: 1.5rem;
+    gap: 2rem;
+    padding: 1rem;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.eventCard, .benefitCard, .planCard, .stepCard {
+    background-color: rgba(240, 238, 236, 0.718);
+    border-radius: 16px;
+    padding: 1rem;
+    box-shadow: 0 4px 16px rgba(123,95,255,0.07);
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    text-align: center;
+    transition: transform 1s ease;
+    position: relative;
+}
+
+.eventCard:hover, .benefitCard:hover, .planCard:hover, .stepCard:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 24px rgba(123,95,255,0.12);
+}
+
+.eventCard.past {
+    opacity: 0.7;
+}
+
+.eventDate {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    background: linear-gradient(270deg, #2355B4, #7b98ff, #a3c8ff, #2355B4);
+    background-size: 400% 400%;
+    animation: mygradient 18s ease infinite;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 16px 0 rgba(123,95,255,0.07);
+}
+
+.eventDate .day {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.eventDate .month {
+    display: block;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.eventContent {
+    margin-top: 40px;
+}
+
+.eventContent h3 {
+    color: #666;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.eventTime, .eventLocation {
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.eventTime i, .eventLocation i {
+    margin-right: 8px;
+    color: #2355B4;
+}
+
+.eventContent p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.eventBtn {
+    display: inline-block;
+    color: white;
+    background: linear-gradient(270deg, #2355B4, #7b98ff, #a3c8ff, #2355B4);
+    background-size: 400% 400%;
+    animation: mygradient 18s ease infinite;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 4px 16px 0 rgba(123,95,255,0.07);
+    transition: all 0.3s ease;
+}
+
+.eventBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(123,95,255,0.15);
+}
+
+.pastEvent {
+    display: inline-block;
+    background: #888;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.benefitCard i, .stepCard i {
+    font-size: 2.5rem;
+    background: linear-gradient(270deg, #2355B4, #7b98ff, #a3c8ff, #2355B4);
+    background-size: 600% 600%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    animation: mygradient 18s ease infinite;
+    margin-bottom: 1rem;
+    padding-top: 18px;
+}
+
+.benefitCard h3, .stepCard h3 {
+    color: #666;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.benefitCard p, .stepCard p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.stepNumber {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(270deg, #2355B4, #7b98ff, #a3c8ff, #2355B4);
+    background-size: 400% 400%;
+    animation: mygradient 18s ease infinite;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 auto 1rem;
+    box-shadow: 0 4px 16px 0 rgba(123,95,255,0.07);
+}
+
+.planCard {
+    position: relative;
+    min-width: 280px;
+    max-width: 350px;
+}
+
+.planCard.featured {
+    transform: scale(1.05);
+    border: 2px solid #2355B4;
+}
+
+.planBadge {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(270deg, #2355B4, #7b98ff, #a3c8ff, #2355B4);
+    background-size: 400% 400%;
+    animation: mygradient 18s ease infinite;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    box-shadow: 0 4px 16px 0 rgba(123,95,255,0.07);
+}
+
+.planHeader {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.planHeader h3 {
+    color: #666;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.planPrice {
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(270deg, #2355B4, #7b98ff, #a3c8ff, #2355B4);
+    background-size: 600% 600%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    animation: mygradient 18s ease infinite;
+}
+
+.planPrice span {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #888;
+}
+
+.planFeatures ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.planFeatures li {
+    color: #666;
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.planFeatures li i {
+    color: #2355B4;
+    margin-right: 10px;
+    font-size: 0.9rem;
+}
+
+.planBtn {
+    display: inline-block;
+    color: white;
+    background: linear-gradient(270deg, #2355B4, #7b98ff, #a3c8ff, #2355B4);
+    background-size: 400% 400%;
+    animation: mygradient 18s ease infinite;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 4px 16px 0 rgba(123,95,255,0.07);
+    transition: all 0.3s ease;
+    width: 100%;
+    text-align: center;
+}
+
+.planBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(123,95,255,0.15);
+}
+
+
+
+/* Responsive Design */
+/* Large Desktop (1400px and up) */
+@media (min-width: 1400px) {
+    .hero, .committees, .features, .upcoming-events, .past-events, .membership-benefits, .membership-plans, .how-to-join {
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    nav {
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Desktop (1200px to 1399px) */
+@media (max-width: 1399px) {
+    .hero, .committees, .features, .upcoming-events, .past-events, .membership-benefits, .membership-plans, .how-to-join {
+        max-width: 1200px;
+    }
+}
+
+/* Laptop (992px to 1199px) */
+@media (max-width: 1199px) {
+    .hero, .committees, .features, .upcoming-events, .past-events, .membership-benefits, .membership-plans, .how-to-join {
+        max-width: 1000px;
+        margin: 2rem 2rem 2.5rem 2rem;
+    }
+    
+    nav {
+        margin: 2rem 2rem;
+    }
+    
+    .committeeCards, .box, .eventsContainer, .benefitsContainer, .plansContainer, .stepsContainer {
+        gap: 1.5rem;
+    }
+    
+    .committeeCards {
+        flex-wrap: wrap;
+        max-height: none;
+        justify-content: center;
+    }
+    
+    .committeeCard, .featureCard, .eventCard, .benefitCard, .planCard, .stepCard {
+        min-width: 280px;
+    }
+    .wrapper{
+        max-height: 3000px;
+        width: 90%;
+        margin: 0rem 3.1rem 3rem 3.1rem;
+    }
+}
+
+/* Tablet (768px to 991px) */
+@media (max-width: 991px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+    }
+    
+    .hero .left, .hero .right {
+        max-width: 100%;
+        margin: 0;
+    }
+    
+    .hero .right {
+        margin-top: 2rem;
+    }
+    
+    .committeeCards, .box, .eventsContainer, .benefitsContainer, .plansContainer, .stepsContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .committeeCard, .featureCard, .eventCard, .benefitCard, .planCard, .stepCard {
+        max-width: 500px;
+        width: 100%;
+    }
+    
+    .seeda {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        padding-right: 10px;
+    }
+    
+    .seeda a {
+        font-size: 1rem;
+        padding: 8px 12px;
+    }
+    
+    .contactContainer {
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem;
+        padding: 1rem;
+        max-width: calc(100% - 2rem);
+        gap: 1rem;
+    }
+    
+    .first, .second, .third {
+        max-width: 100%;
+        margin: 1rem 0;
+    }
+    
+    .third {
+        margin: 2rem 2rem;
+        max-width: calc(100% - 4rem);
+    }
+
+    .wrapper {
+        margin: 2rem 2rem;
+        max-width: calc(100% - 4rem);
+    }
+    
+    .wrapper .card_Container {
+        justify-content: center;
+    }
+    
+    .card_Container .card {
+        width: 280px;
+        height: 380px;
+        margin: 15px;
+    }
+    .hero .right {
+        text-align: center;
+        margin: 10% 30%;
+    }
+    .membership-benefits{
+        max-height: 1600px;
+    }
+    .how-to-join{
+        max-height: 1200px;
+    }
+    .upcoming-events{
+        max-height: 1800px;
+        overflow: auto;
+        
+    }
+    .events-hero .right{
+        text-align: center;
+        margin: 10% 35%;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    nav{
+        margin: 1rem 2rem;
+        height: auto;
+        padding: 0.1rem 0.5rem;
+    }
+    .dawa{
+        margin-right: 100px;
+        margin-top: 10px;
+    }
+    .committees, .features{
+        max-height: 1200px;
+        overflow: auto;
+    }
+}
+
+/* Mobile Large (576px to 767px) */
+@media (max-width: 767px) {
+
+    .upcoming-events{
+        max-height: 1800px;
+        overflow: auto;
+
+    }
+    body {
+        font-size: 14px;
+    }
+    
+    nav {
+        margin: 1rem;
+        height: auto;
+        padding: 1rem 0;
+    }
+    
+    .main {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .dawa {
+        margin-left: 0;
+    }
+    
+    .seeda {
+        flex-direction: column;
+        height: auto;
+        gap: 0.5rem;
+        padding-right: 0;
+    }
+    
+    .seeda a {
+        justify-content: center;
+        padding: 10px 15px;
+    }
+    
+    .hero, .committees, .features, .upcoming-events, .past-events, .membership-benefits, .membership-plans, .how-to-join {
+        margin: 1rem;
+        padding: 1rem;
+    }
+    
+    .events-hero, .membership-hero {
+        margin: 1rem 0;
+    }
+    
+    .events-hero .hero, .membership-hero .hero {
+        padding: 1rem;
+    }
+    
+    .eventsContainer, .benefitsContainer, .plansContainer, .stepsContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 0.5rem;
+    }
+    
+    .eventCard, .benefitCard, .planCard, .stepCard {
+        width: 100%;
+        max-width: 400px;
+        margin: 0.5rem 0;
+    }
+    
+    .hero h2 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .committees h2, .features h2, .upcoming-events h2, .past-events h2, .membership-benefits h2, .membership-plans h2, .how-to-join h2 {
+        font-size: 2rem;
+    }
+    
+    .committeeCard, .featureCard, .eventCard, .benefitCard, .planCard, .stepCard {
+        min-width: 250px;
+        padding: 0.8rem;
+    }
+    
+    .committeeCard i, .featureCard i, .benefitCard i, .stepCard i {
+        font-size: 2rem;
+    }
+    
+    .committeeCard h3, .featureCard h3, .benefitCard h3, .stepCard h3, .eventContent h3 {
+        font-size: 1.2rem;
+    }
+    
+    .committeeCard p, .featureCard p, .benefitCard p, .stepCard p, .eventContent p {
+        font-size: 0.9rem;
+    }
+    
+    .h-buttons {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    
+    .left a {
+        margin: 5px;
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+    
+    .contactContainer {
+        margin: 1rem;
+        padding: 0.5rem;
+        max-width: calc(100% - 2rem);
+    }
+    
+    .first, .second, .third {
+        margin: 0.5rem 0;
+        padding: 0.8rem;
+    }
+    
+    .first img {
+        width: 100%;
+        max-width: 250px;
+        margin: 0.5rem 0;
+    }
+    
+    .contactForm {
+        gap: 0.3rem;
+    }
+    
+    input, textarea {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+    
+    button[type="submit"] {
+        padding: 12px 20px;
+        font-size: 1rem;
+        margin: 20px 5px 10px 5px;
+    }
+    
+    .third {
+        margin: 1rem;
+        padding: 0.5rem 1rem;
+        max-width: calc(100% - 2rem);
+    }
+    
+    .links {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+    
+    .wrapper {
+        margin: 1rem;
+        padding: 0.5rem;
+        max-width: calc(100% - 2rem);
+    }
+    
+    .contactContainer {
+        margin: 1rem;
+        padding: 0.5rem;
+        max-width: calc(100% - 2rem);
+    }
+    
+    .card_Container .card {
+        width: 250px;
+        height: 350px;
+        margin: 10px;
+    }
+    
+    .title h4 {
+        font-size: 1.5rem;
+    }
+    
+    .eventDate {
+        left: 10px;
+        padding: 8px 12px;
+    }
+    
+    .eventDate .day {
+        font-size: 1.2rem;
+    }
+    
+    .eventDate .month {
+        font-size: 0.7rem;
+    }
+    
+    .planCard.featured {
+        transform: none;
+    }
+    
+    .planPrice {
+        font-size: 1.5rem;
+    }
+    
+    .stepNumber {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    .hero .right{
+        padding-left: 7%;
+    }
+    .dawa{
+        margin-left: 90px;
+        margin-top: 10px;
+    }
+
+}
+
+/* Mobile Small (up to 575px) */
+@media (max-width: 575px) {
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+    
+    .committees h2, .features h2, .upcoming-events h2, .past-events h2, .membership-benefits h2, .membership-plans h2, .how-to-join h2 {
+        font-size: 1.8rem;
+    }
+    
+    .committeeCard, .featureCard, .eventCard, .benefitCard, .planCard, .stepCard {
+        min-width: 200px;
+        padding: 0.6rem;
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    .eventsContainer, .benefitsContainer, .plansContainer, .stepsContainer {
+        gap: 0.5rem;
+        padding: 0.25rem;
+    }
+    
+    .committeeCard i, .featureCard i, .benefitCard i, .stepCard i {
+        font-size: 1.8rem;
+    }
+    
+    .committeeCard h3, .featureCard h3, .benefitCard h3, .stepCard h3, .eventContent h3 {
+        font-size: 1.1rem;
+    }
+    
+    .committeeCard p, .featureCard p, .benefitCard p, .stepCard p, .eventContent p {
+        font-size: 0.8rem;
+    }
+    
+    .left a {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+    
+    .card_Container .card {
+        width: 220px;
+        height: 320px;
+        margin: 8px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .eventDate {
+        left: 5px;
+        padding: 6px 10px;
+    }
+    
+    .eventDate .day {
+        font-size: 1rem;
+    }
+    
+    .eventDate .month {
+        font-size: 0.6rem;
+    }
+    
+    .planPrice {
+        font-size: 1.3rem;
+    }
+    
+    .stepNumber {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+    
+    .planFeatures li {
+        font-size: 0.9rem;
+    }
+    
+    .planBtn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .contactContainer {
+        margin: 0.5rem;
+        padding: 0.5rem;
+        max-width: calc(100% - 1rem);
+    }
+    
+    .first, .second, .third {
+        margin: 0.3rem 0;
+        padding: 0.6rem;
+    }
+    
+    .first img {
+        max-width: 200px;
+    }
+    
+    .contactForm {
+        gap: 0.2rem;
+    }
+    
+    input, textarea {
+        padding: 0.6rem;
+        font-size: 0.8rem;
+    }
+    
+    button[type="submit"] {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+        margin: 15px 5px 5px 5px;
+    }
+    
+    .first h2, .second h2, .third h3 {
+        font-size: 1.5rem;
+    }
+
+    .hero .right{
+        margin-left: 10%;
+    }
+    .wrapper{
+        max-height: 3000px;
+        margin: 1rem 1.5rem 1rem 1.5em;
+    }
+}
+/* Landscape Mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        padding: 1rem;
+    }
+    
+    .hero h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero p {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+    
+    .h-buttons {
+        flex-direction: row;
+        gap: 1rem;
+    }
+    
+    .left a {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+    .wrapper{
+        max-height: 3000px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background: white !important;
+        color: black !important;
+    }
+    
+    nav, .h-buttons, .eventBtn, .planBtn {
+        display: none !important;
+    }
+    
+    .hero, .committees, .features, .upcoming-events, .past-events, .membership-benefits, .membership-plans, .how-to-join {
+        background: white !important;
+        box-shadow: none !important;
+        border: 1px solid #ccc !important;
+    }
+    
+    .committeeCard, .featureCard, .eventCard, .benefitCard, .planCard, .stepCard {
+        background: white !important;
+        box-shadow: none !important;
+        border: 1px solid #ccc !important;
+        break-inside: avoid;
+    }
+
+    .wrapper{
+        max-height: 3000px;
+    }
 }
