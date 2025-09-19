@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.6;
+    background: linear-gradient(270deg, #2355B4, #7b98ff, #a3c8ff, #2355B4);
+    background-size: 400% 400%;
+    animation: mygradient 18s ease infinite;
+}
+
+@keyframes mygradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+.title {
+    font-size: 1rem;
+    color: #2c3e50
+}
+p {
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.right img {
+    width: 200px;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px 0 rgba(123,95,255,0.07);
+}
+
+nav {
+    background-color: white;
+    max-width: 1250px;
+    margin: 4rem auto;
+    border-radius: 16px;
+    height: 100px;
+    margin-top: 3rem;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.65rem 0;
+}
+
+.seeda {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+    padding-right: 20px;
+}
+
+.dawa {
+    margin-left: 30px;
+    color: #2c3e50
+}
+
+.dawa h1 a {
+    text-decoration: none;
+    background: linear-gradient(270deg, #2355B4, #7b98ff, #a3c8ff, #2355B4);
+    background-size: 600% 600%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    animation: mygradient 18s ease infinite;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+@keyframes mygradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* for the nav bar logos */
+.seeda a {
+    text-decoration: none;
+    color: #7b98ff;
+    font-weight: 500;
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+    padding: 10px 15px;
+    border: 1px solid transparent;
+    border-radius: 16px;
+    /* background-color: #2c3e50; */
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.seeda a:hover {
+    color: black;
+}
+
+nav .seeda .one{
+    background: linear-gradient(270deg, #2355B4, #7b98ff, #a3c8ff, #2355B4);
+    background-size: 400% 400%;
+    animation: mygradient 18s ease infinite;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: 500;
+    box-shadow: 0 4px 16px 0 rgba(123,95,255,0.07);
+    transition: background-color 0.3s ease;
+    color: white;
+}
+/* this is for the hero section */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1250px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    text-align: center;
+    background: rgba(255,255,255,0.92);
+    border-radius: 16px;
+    box-shadow: 0 4px 16px 0 rgba(123,95,255,0.07);
+    margin: 2rem auto;
+    padding: 4rem;
+    max-height: 2000px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+        background: linear-gradient(270deg, #2355B4, #7b98ff, #a3c8ff, #2355B4);
+    background-size: 600% 600%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    animation: mygradient 18s ease infinite;
+    margin-bottom: 1.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 1100px;
+    margin: 0 auto;
+    line-height: 1.8;
+    padding-bottom: 20px;
+}
+
+.left p{
+    margin-bottom: 15px;
+}
+.left{
+    max-width: 700px;
+}
+
+.right{
+    margin: 10px 20px 0px 30px;
+}
+
+.right img{
+    margin-bottom: 20px;
+}
+.right h1{
+    background: linear-gradient(270deg, #2355B4, #7b98ff, #a3c8ff, #2355B4);
+    background-size: 600% 600%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    animation: mygradient 18s ease infinite;
+}
+
+.left a{
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(270deg, #2355B4, #7b98ff, #a3c8ff, #2355B4);
+    background-size: 400% 400%;
+    animation: mygradient 18s ease infinite;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: 500;
+    box-shadow: 0 4px 16px 0 rgba(123,95,255,0.07);
+    transition: background-color 0.3s ease;
+    margin: 10px;
+}
