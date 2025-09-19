@@ -111,7 +111,7 @@ nav {
     color: black;
 }
 
-.two:hover, .three:hover, .four:hover, .five:hover {
+.one:hover, .two:hover, .three:hover, .four:hover, .five:hover {
     background: linear-gradient(270deg, #2355B4, #7b98ff, #a3c8ff, #2355B4);
     background-size: 400% 400%;
     animation: mygradient 18s ease infinite;
@@ -410,4 +410,134 @@ footer .socialLinks a:hover {
     color: transparent;
     animation: mygradient 18s ease infinite;
     margin-top: 1rem;
+}
+
+
+
+/* This is for the contact page */
+.contactContainer{
+    display: flex;
+    margin-top: 1.5rem;
+    max-height: 1000px;
+    gap: 2rem;
+    padding: 1rem;
+    padding-bottom: 20px;
+    margin-left: 2rem;
+}
+
+.first, .second, .third{
+    background-color: rgb(255, 255, 255);
+    border-radius: 16px;
+    padding: 1rem;
+    box-shadow: 0 4px 16px rgba(123,95,255,0.07);
+    flex: 3;
+    max-width: 38rem;
+    color: #666;
+
+}
+.first h2, .second h2, .third h3{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(270deg, #2355B4, #7b98ff, #a3c8ff, #2355B4);
+    background-size: 600% 600%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    animation: mygradient 18s ease infinite;
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.second h2{
+    padding-bottom: 1.5rem;
+}
+.first p{
+    margin: 3rem 1rem 1rem 1rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.contactForm{
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding-bottom: 20px;
+}
+
+.third{
+    max-width: 1250px;
+    line-height: 1.6;
+    font-size: 1rem;
+    margin: 1.5rem 1rem 3rem 3rem;
+    padding-left: 3rem;
+    max-height: 500px;
+}
+.links{
+    display: flex;
+    gap: 3rem;
+    margin-top: 1rem;
+}
+
+.links a{
+    text-decoration: underline;
+    color: #666;
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+    padding: ;
+}
+
+.links a:hover{
+    color: #2355B4;
+}
+
+/* now lets style the form element  */
+label{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+    padding: 5px 0px;
+}
+
+
+
+input, textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+button[type="submit"] {
+    color: white;
+    background: linear-gradient(270deg, #2355B4, #7b98ff, #a3c8ff, #2355B4);
+    background-size: 400% 400%;
+    animation: mygradient 18s ease infinite;
+    padding: 18px 25px;
+    border-radius: 30px;
+    border: none;;
+    box-shadow: 0 4px 16px 0 rgba(123,95,255,0.07);
+    transition: background-color 0.3s ease;
+    margin: 30px 10px 10px 10px;
+    font-size: 1.1rem;
+    font-family: poppins, sans-serif;
+}
+
+button[type="submit"]:hover {
+    background-color: #1a3e8c;
+    cursor: pointer;
+}
+
+.first img{
+    width: 32rem;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px 0 rgba(123,95,255,0.07);
+    margin: 0 2rem;
+    margin-top: 0.5rem;
 }
